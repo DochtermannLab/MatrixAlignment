@@ -65,9 +65,9 @@ Ovaskainen.etal2008<-function(A,B,k,samp=1000){
   stor<-matrix(NA,i)
   for(j in 1:i){
     domA.1<-vec.out(A[combs[j,1],],k)
-    domB.1<-vec.out(B[combs[j,2],],k)
+    domB.1<-vec.out(B[combs[j,1],],k)
     domA.2<-vec.out(A[combs[j,2],],k)
-    domB.2<-vec.out(B[combs[j,1],],k)
+    domB.2<-vec.out(B[combs[j,2],],k)
     
     cor.A1A2<-vec.cor(domA.1,domA.2)
     cor.B1B2<-vec.cor(domB.1,domB.2)
